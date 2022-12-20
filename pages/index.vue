@@ -1,5 +1,5 @@
 <template >
-  <div data-theme="cyberpunk" class="bg-[#2A303C]">
+  <div data-theme="cyberpunk" class="bg-[#2A303C] font-ntbrick tracking-wide ">
     <div class="bg-[#2A303C] ">
       <navbar-menu class="bg-[#2A303C] text-white"></navbar-menu>
       <div class="flex bg-[#2A303C] items-center justify-center">
