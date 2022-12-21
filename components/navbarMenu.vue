@@ -8,8 +8,10 @@
           </svg>
         </label>
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#1c4f82] rounded-box w-52">
-          <li class="hover:bg-[#1c4f82] hover:text-[#fe0]"><a>Item 1</a></li>
-          <li class="hover:bg-[#1c4f82] hover:text-[#fe0]"><a>Item 3</a></li>
+          <li class="hover:bg-[#1c4f82] hover:text-[#fe0] active:bg-[#1c4f82] focus:bg-[#1c4f82]"><a>Hero</a></li>
+        <li class="hover:bg-[#1c4f82] hover:text-[#fe0] focus:bg-[#1c4f82]"><a>Our projects</a></li>
+        <li class="hover:bg-[#1c4f82] hover:text-[#fe0] focus:bg-[#1c4f82]"><a>Members</a></li>
+        <li class="hover:bg-[#1c4f82] hover:text-[#fe0] focus:bg-[#1c4f82]"><a>Contact Us</a></li>
         </ul>
       </div>
       <a

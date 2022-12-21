@@ -6,34 +6,7 @@
         <herosection></herosection>
       </div>
     </div>
-    <sponsors class=" m-5">
-      <div class="text-center">
-        <p class="text-white">
-          Our sponsors
-        </p>
-      </div>
-      <div class="m-5">
-        <div class="flex sm:flex-col xs:flex-col xs:gap-3 sm:gap-3 w-full">
-          <div class="grid h-20 flex-grow card rounded-box place-items-center"><img src="../assets/support/blidacom.png"
-              class="bg-white shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none ease-in-out transition-all hover:translate-x-2 hover:translate-y-2  max-h-20">
-          </div>
-          <div class="divider divider-horizontal"></div>
-          <div class="grid h-20 flex-grow card rounded-box place-items-center"><img src="../assets/support/gamers.png"
-              class="bg-white shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none ease-in-out transition-all hover:translate-x-2 hover:translate-y-2  max-h-20">
-          </div>
-          <div class="divider divider-horizontal"></div>
-          <div class="grid h-20 flex-grow card  rounded-box place-items-center"><img
-              src="../assets/support/hostarts.png"
-              class="bg-white shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none ease-in-out transition-all hover:translate-x-2 hover:translate-y-2  max-h-20">
-          </div>
-          <div class="divider divider-horizontal"></div>
-          <div class="grid h-20 flex-grow card rounded-box place-items-center"><img
-              src="../assets/support/microsoft.png"
-              class="bg-white shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none ease-in-out transition-all hover:translate-x-2 hover:translate-y-2  max-h-20">
-          </div>
-        </div>
-      </div>
-    </sponsors>
+    <our-sponsors></our-sponsors>
     <cards class="m-5 flex items-center justify-center flex-col">
       <div class="text-center ">
         <p class="text-white">
@@ -91,8 +64,30 @@
 <script>
 import Herosection from '../components/herosection.vue'
 import NavbarMenu from '../components/navbarMenu.vue'
+import OurSponsors from '../components/ourSponsors.vue'
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data() {
+ 
+       return {
+      
+    }
+  },
+  methods: {
+    parseSheet (sheetId, sheetName = null) {
+      return this.$gsparser.parse(sheetId, sheetName)
+    }
+  },
+  async mounted () {
+    // see: https://docs.google.com/spreadsheets/d/10WDbAPAY7Xl5DT36VuMheTPTTpqx9x0C5sDCnh4BGps
+    const sheetId = '16GAMSG0dP2jxUD88JF2NgTqijixl_shnI30P_6KpJnM'
+
+    const data1 = await this.parseSheet(sheetId, 'Sheet1')
+    console.log(data1) // [{"a":1,"b":2,"c":3},{"a":4,"b":5,"c":6},{"a":7,"b":8,"c":9}]
+
+   /* const data2 = await this.parseSheet(sheetId, 'Sheet2')
+    console.log(data2) // [{"a":10,"b":20,"c":30},{"a":40,"b":50,"c":60},{"a":70,"b":80,"c":90}] */
+  },
 }
 </script>
 
