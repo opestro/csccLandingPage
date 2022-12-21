@@ -5,4 +5,14 @@
 @font-face {
     font-family: "NTBrick";
     src: url("../NTBrickSans.otf");
+
   }
+  
+@font-face {
+  font-family: "VCR";
+  src: url("../VCR.ttf");
+}
+@font-face {
+  font-family: "RGame";
+  src: url("../rgame.ttf");
+}

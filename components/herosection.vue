@@ -3,8 +3,9 @@
         <div class="hero min-h-[100vh]  bg-[#2A303C]">
             <div class="hero-content flex flex-col text-center">
                 <div class="max-w-4xl">
-                    <h1 class="text-5xl xs:text-4xl font-bold leading-normal text-[#fe0]" style="font-weight: 400">{{ heroTitle }} </h1>
-                    <p class="py-6 text-sm xs:text-xs ">The Computer Science Community Club is the first
+                    <h1 class="text-5xl xs:text-4xl font-ntbrick font-bold leading-normal text-[#fe0]"
+                        style="font-weight: 400">{{ heroTitle }} </h1>
+                    <p class="py-6 text-sm  xs:text-xs ">The Computer Science Community Club is the first
                         scientific club in University Saad Dahleb of BLIDA since 2012 . CSCC is led by a team of geeks
                         with a track motivation of building a high quality of developers in students community, we
                         invest our time to create projects and ideas that make the university experience unique and
@@ -12,9 +13,11 @@
                         interested in computer science through organizing non-profit activities ( events , trainings ,
                         workshops) , our mission is to usher the next wave of the new digital advanced Algeria .</p>
                     <button @click="write()" v-show="!supportBtn"
-                        class="btn bg-[#1c4f82]  hover:bg-[#fe0] tracking-widest  hover:text-[#1c2682]">Wanna support us?</button>
+                        class="btn bg-[#1c4f82]  hover:text-[#1c2682] hover:bg-[#fe0]  my-5 hover:translate-x-2 hover:translate-y-2 tracking-widest shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none ">Wanna
+                        support us?</button>
                     <div class="text-white" v-if="supportBtn">
-                        <span class="label-text text-white tracking-widest ">Type ✍️ what you like and share it on your story 🤝</span>
+                        <span class="label-text text-white tracking-widest ">Type ✍️ what you like and share it on your
+                            story 🤝</span>
                         <div class="flex items-center justify-center">
                             <p>
                                 👉

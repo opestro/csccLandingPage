@@ -11,6 +11,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'ntbrick': ["NTBrick"],
+      'vcr': ["VCR"],
+      'rgame': ["RGame"]
     },
     extend: {
 
