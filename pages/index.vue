@@ -7,52 +7,7 @@
       </div>
     </div>
     <our-sponsors></our-sponsors>
-    <cards class="m-5 flex items-center justify-center flex-col">
-      <div class="text-center ">
-        <p class="text-white">
-          Some of our projects
-        </p>
-      </div>
-      <div class="flex justify-center sm:flex-col xs:flex-col gap-5 m-10 text-white">
-      
-      <div class="card w-72 ">
-        <figure><img src="../assets/cards/1.png" alt="Shoes" /></figure>
-        <div class="card-body">
-          <h2 class="font-ntbrick card-title tracking-widest  text-[#fe0]">
-            Jerry School
-          </h2>
-          <p class="text-sm">click below to read more!</p>
-          <div class="card-actions justify-end">
-            <button class="btn bg-[#1c4f82] tracking-widest shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none mr-3 hover:translate-x-2 hover:translate-y-2   hover:text-[#1c2682] hover:bg-[#fe0]">Ream more</button>
-          </div>
-        </div>
-      </div>
-      <div class="card w-72  ">
-        <figure><img src="../assets/cards/2.png" alt="Shoes" /></figure>
-        <div class="card-body">
-          <h2 class=" font-ntbrick card-title tracking-widest  text-[#fe0] ">
-            Smart Door
-          </h2>
-          <p class="text-sm">click below to read more!</p>
-          <div class="card-actions justify-end">
-            <button class="btn bg-[#1c4f82] tracking-widest shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none mr-3 hover:translate-x-2 hover:translate-y-2   hover:text-[#1c2682] hover:bg-[#fe0]">Ream more</button>
-          </div>
-        </div>
-      </div>
-      <div class="card w-72  ">
-        <figure><img src="../assets/cards/3.png" alt="Shoes" /></figure>
-        <div class="card-body">
-          <h2 class="font-ntbrick card-title tracking-widest  text-[#fe0]">
-            USDB Ecopies
-          </h2>
-          <p class="text-sm">click below to read more!</p>
-          <div class="card-actions justify-end">
-            <button class="btn bg-[#1c4f82] tracking-widest shadow-[8px_8px_0_0_rgb(29,33,41)] hover:shadow-none mr-3 hover:translate-x-2 hover:translate-y-2   hover:text-[#1c2682] hover:bg-[#fe0]">Read more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    </cards>
+    <projects></projects>
 
 
     <div class="divider divide-white before:bg-white after:bg-white bg-[#2A303C] text-white">Hope you like it 💕</div>
@@ -65,7 +20,9 @@
 import Herosection from '../components/herosection.vue'
 import NavbarMenu from '../components/navbarMenu.vue'
 import OurSponsors from '../components/ourSponsors.vue'
+import projects from '../components/projects.vue'
 export default {
+  components: { projects },
   name: 'IndexPage',
   data() {
  
