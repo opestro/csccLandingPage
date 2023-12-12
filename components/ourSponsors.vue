@@ -1,5 +1,5 @@
 <template>
-        <sponsors class=" m-5">
+        <sponsors class=" m-5 ">
       <div class="text-center">
         <p class="text-white">
           Our sponsors

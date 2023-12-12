@@ -1,12 +1,12 @@
 <template>
-    <cards class="m-5 flex items-center justify-center flex-col">
+    <cards class="m-5 flex items-center justify-center flex-col ">
         <div class="text-center ">
             <p class="text-white">
                 Some of our projects
             </p>
         </div>
 
-        <div class="flex justify-center sm:flex-col xs:flex-col gap-5 m-10 text-white">
+        <div class="flex flex-auto justify-center sm:flex-col xs:flex-col gap-5 m-10 text-white">
             <div v-for="Prodata in sheetData" :key="Prodata" class="card w-72 ">
                 <figure><img :src="Prodata.projectImg" alt="Shoes" /></figure>
                 <div class="card-body">
@@ -14,7 +14,7 @@
                         {{ Prodata.projectTitle }}
                     </h2>
                     <p class="text-sm">{{ Prodata.projectSubTitle }}</p>
-                    <div class="card-actions justify-end">
+                    <div class="card-actions justify-center py-2 my-2">
                         <button
                             class="btn bg-[#1c4f82] tracking-widest shadow-[8px_8px_0_0_rgb(29,33,41)]
                             hover:shadow-none mr-3 hover:translate-x-2 hover:translate-y-2
